@@ -57,8 +57,8 @@ color: white;
 
 .toggle-btn {
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: 3rem;
+    right: .75rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -81,7 +81,7 @@ color: white;
         justify-content: flex-start;
     }
     .navbar-links {
-    //     display: none;
+    display: none;
     width: 100%;
     }
     .navbar-links ul{
@@ -104,8 +104,9 @@ color: white;
 
 }
 @media (max-width: 400px) {
-    .logo {
-        width: 75%;
+    
+    figure {
+        width: 80%;
     }
 }
 

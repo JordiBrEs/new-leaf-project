@@ -49,8 +49,8 @@
 
 .toggle-btn {
   position: absolute;
-  top: 2rem;
-  right: 1rem;
+  top: 3rem;
+  right: 0.75rem;
   display: none;
   flex-direction: column;
   justify-content: space-between;
@@ -74,6 +74,7 @@
     justify-content: flex-start;
   }
   .navbar-links {
+    display: none;
     width: 100%;
   }
   .navbar-links ul {
@@ -94,8 +95,8 @@
   }
 }
 @media (max-width: 400px) {
-  .logo {
-    width: 75%;
+  figure {
+    width: 80%;
   }
 }
 /* reset styles */
