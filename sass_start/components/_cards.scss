@@ -1,0 +1,24 @@
+@use 'sass:math';
+
+.card {
+    display: block;
+    padding: $base-padding;
+    border: $base-border-thickness solid #f6c32c;
+    box-shadow: $base-box-shadow;
+    border-radius: math.div($base-border-radius, 4);
+    .card-title {
+        padding-bottom: $base-padding;
+        font-size:$font-size-xl;
+        font-weight: bold;
+        color: $secondary;
+    }
+    .card-body {
+        font-size:$base-font-size;
+        color:$secondary;
+        
+        a {
+            text-decoration: overline;
+            background-color: map-get($colors, "blue" );
+        }
+    }
+}
