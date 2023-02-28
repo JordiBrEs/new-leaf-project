@@ -71,7 +71,7 @@
   }
   .navbar, .navbar-newLeaf {
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
   }
   .navbar-links {
     display: none;
@@ -93,6 +93,9 @@
     color: white;
     box-shadow: 400px 0 0 0 #54b3d6;
   }
+  .navbar-links.active {
+    display: flex;
+}
 }
 @media (max-width: 400px) {
   figure {
