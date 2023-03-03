@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #a3f2d6;
+  
 }
 
 .navbar-links ul {
@@ -48,22 +49,14 @@
 }
 
 .toggle-btn {
-  position: absolute;
-  top: 3rem;
+  position: fixed;
+  top: 40px;
   right: 0.75rem;
   display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px;
+  color: blue;
+  font-size: 30px;
 }
 
-.toggle-btn .bar {
-  height: 3px;
-  width: 100%;
-  background: blue;
-  border-radius: 10%;
-}
 
 @media (max-width: 820px) {
   .toggle-btn {
@@ -104,6 +97,7 @@
 .logo-figure {
   width: 70%;
 }
+
 }
 /* reset styles */
 * {
