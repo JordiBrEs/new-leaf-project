@@ -96,12 +96,12 @@
   .navbar-links.active {
     display: flex;
   }
-  .logo {
+  .logo-figure {
     width: 80%;
   }
 }
 @media (max-width: 400px) {
-.logo {
+.logo-figure {
   width: 70%;
 }
 }
