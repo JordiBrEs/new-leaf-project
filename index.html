@@ -27,11 +27,12 @@
 
 <body>
   <header>
-    <nav class="navbar">
-      <figure class="logo-figure">
+    <nav class="navbar pl-4 pr-3 pb-2">
+      <figure id="newleaf" class="logo-figure">
         <a href="#">
           <img class="logo" src="img/logo1.svg" alt="unplugged logo"> </a>
       </figure>
+    
       <a href="#" class="toggle-btn" >
         <i class="fa-solid fa-bars bars"></i>
       </a>
@@ -39,8 +40,7 @@
         <ul>
           <li><a href="#services">Services</a></li>
           <li><a href="#gallery">Gallery</a></li>
-          <li><a class="emailUs" href="mailto: newleafgardenllc@gmail.com">Contact Us</a></li>
-          <li><a class="callus" href="tel:+12163462356">Call Us</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -65,24 +65,21 @@
       </nav> -->
     
       <!-- intro -->
-      <div class="container mt-5">
-        <div class="row justify-center">
-          <div class="col-12-xs col-5-md">
+      <div class="hero pt-6 pb-6 pl-4">
+        <div>
+          <div class="col-12-xs">
             <h2>
-              <div class="font-xxl">Black-Belt</div>
-              <div class="font-xxl text-secondary">Your Website</div>
+              <div class="font-xxl">Give your garden</div>
+              <div class="font-xxl text-primary">a new Leaf</div>
             </h2>
-            <p class="text-gray mt-2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#services" class="btn-outlined-secondary text-secondary text-hover-white">View Our Work</a>
-          </div>
-          <div class="col-12-xs col-5-md">
-            <img src="" alt="latop">
+            <!-- <p class="text-gray mt-2 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> -->
+            <!-- <a href="#services" class="btn-outlined-secondary text-secondary text-hover-white">View Our Work</a> -->
           </div>
         </div>
       </div>
     
       <!-- about -->
-      <section id="services" class="bg-secondary-light-9 mt-5 pt-4 pb-4">
+      <section id="services" class="bg-secondary-light-9 pt-4 pb-4 service">
           <div class="container">
             <div class="justify-center align-text-center">
               <h2 class="mb-2 justify-center row text-primary font-xl">Our Services</h2>
@@ -163,8 +160,28 @@
     
       <!-- footer -->
       <footer class="bg-gray-light-7 pt-3 pb-3 mt-5">
-        <div class="justify-center  row container">
-          &#169; 2023 | New Leaf
+        <div class="justify-center row container text-white">
+          <div class="col-12-xs col-6-md col-3-lg">
+            <h4 id="contact" class="font-xl pb-1">Contact</h4>
+            <p class="footer-style">
+              <i class="fa-solid fa-phone-volume icons"> Call Us
+              </i><br>
+              <a href="tel:+12163462356"> +1(216)346-2356 </a>
+            </p>
+          </div>
+          <div class="justify-center row container pt-3 text-white">
+            <p id="email" class="footer-style">
+              <i class="fa-solid fa-envelope icons">
+                Email Us
+              </i><br>
+              <a href="mailto: newleafgardenllc@gmail.com"> newleafgardenllc@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="justify-center row container pt-3 text-white footer-style">
+          <a href="#newleaf">
+         <span class="icons"> &#169;  2023 </span>| New Leaf
+        </a>
         </div>
       </footer>
 

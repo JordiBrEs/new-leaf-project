@@ -15,10 +15,20 @@
   align-items: center;
   background-color: #a3f2d6;
 
-
-  
 }
 
+
+.hero {
+  background-image: url(../img/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.service {
+  background-image: url;
+}
 .navbar-links ul {
   display: flex;
   margin: 0;
@@ -62,7 +72,13 @@
   color: blue;
   font-size: 30px;
 }
+.icons{
+  color:#f6c32c;
 
+}
+.footer-style:hover {
+  color: #f6c32c;
+}
 
 @media (max-width: 820px) {
   .toggle-btn {
@@ -158,6 +174,19 @@ img {
   flex-flow: row wrap;
 }
 
+.pt-6{
+  padding-top: 6em;
+}
+
+.pb-6 {
+  padding-bottom: 6em;
+}
+.pb-1{
+  padding-bottom: 1em;
+}
+.pb-2{
+  padding-bottom: 7rem;
+}
 @media screen and (min-width: 0) {
   .col-12-xs {
     box-sizing: border-box;
@@ -217,7 +246,7 @@ img {
 }
 
 .bg-gray-light-7 {
-  background-color: #d9d9d9;
+  background-color: #00180f;
 }
 
 .text-white {
