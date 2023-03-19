@@ -33,13 +33,13 @@
 .navbar-links li a {
   text-decoration: none;
   display: block;
-  box-shadow: inset 0 0 0 0 #08A4D4;
+  box-shadow: inset 0 0 0 0 #ffa600;
   color: #363636;
   transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .navbar-links a:hover {
-  box-shadow: inset 90px 0 0 0 #54b3d6;
+  box-shadow: inset 90px 0 0 0 #ffa600;
   color: white;
 }
 
@@ -71,14 +71,21 @@
   width: 100%;
   height: 500px;
 }
+
+.worksection {
+  background-image: url(../img/sketch-1.JPG);
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  width: 100%;
+
+}
+/* We need to decide color for the font */
 .orange {
   color: ;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.before1:hover {
-  background-image: url(../img/Before\ 1.JPG);
-}
+/*  */
 
 .icons{
   color:#f6c32c;
