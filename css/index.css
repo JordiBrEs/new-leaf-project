@@ -51,6 +51,8 @@
 
 .logo {
   width: 100%;
+  border: none;
+  box-shadow: none;
 }
 
 .toggle-btn {
@@ -131,6 +133,8 @@
 /* Images */
 img {
   border-radius: 20%;
+  border: 3px solid gray;
+  box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.1);
 }
 /*  */
 
