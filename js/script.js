@@ -5,7 +5,11 @@ const buttonServices = document.querySelector(".display");
 const buttonCloseServices = document.querySelector(".btn-secondaryb");
 const hiddenDiv = document.querySelector(".hidden");
 
-console.log(hiddenDiv);
+const buttonGallery = document.querySelector(".display2");
+const buttonShowLessGallery = document.querySelector(".btn-secondaryc");
+const hiddenDiv2 = document.querySelector(".hidden2");
+
+
 
 
 toggleButton.addEventListener('click', () => {
@@ -24,4 +28,17 @@ buttonCloseServices.addEventListener("click", function(){
     buttonServices.classList.remove("hide");
     buttonCloseServices.classList.remove("show");
 
+})
+
+buttonGallery.addEventListener("click", function(){
+    hiddenDiv2.classList.add("show-hidden");
+    buttonGallery.classList.add("hide");
+    buttonShowLessGallery.classList.add("show");
+
+})
+
+buttonShowLessGallery.addEventListener("click", function(){
+    hiddenDiv2.classList.remove("show-hidden");
+    buttonGallery.classList.remove("hide");
+    buttonShowLessGallery.classList.remove("show");
 })
