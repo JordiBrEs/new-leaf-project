@@ -37,37 +37,24 @@
           <img class="logo" src="img/logo1.svg" alt="unplugged logo"> </a>
       </figure>
     
-      <a href="#" class="toggle-btn" >
-        <i class="fa-solid fa-bars bars"></i>
-      </a>
-      <div class="navbar-links pr-3">
-        <ul>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#ourstory">Our Story</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+     
+      <!-- <div class="navbar-links pr-3">stop Z after here -->
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#ourstory" class="nav-link">Our Story</a></li>
+          <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+      <!-- </div> -->
+      <div class="hamburguer">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
     </nav>
     
     
   </header>
-    <!-- <nav class="navbar-newLeaf display-f">
-        <div class="container col-12-xs col-6-md col-1-xl">
-          <figure>
-          <a href="#">
-            <img class="logo" src="img/logo1.svg" alt="unplugged logo"> </a>
-          </figure>
-        </div>
-        <div class="container col-12-xs col-1-xl">
-          <ul class="display-f">
-            <li class="ml-3 align-center col-12-xs col-6-md text-hover-secondary"><a href="#work">Services</a></li>
-            <li class="ml-3 col-12-xs col-6-md text-hover-secondary"><a href="#about">Gallery</a></li>
-            <li class="ml-3 col-12-xs col-6-md text-hover-secondary"><a href="#">Contact</a></li>
-            <li class="ml-3 col-12-xs col-6-md text-hover-secondary"><a href="#">Call Us</a></li>
-          </ul>
-        </div>
-      </nav> -->
     
       <!-- hero section -->
       <div class="hero pb-6">
@@ -84,47 +71,48 @@
     
       <!-- services section -->
       <section id="services" class="bg-secondary-light-9 pt-4 pb-4 service">
-          <div class="container justify-center">
+         <div class="container">
+            
             <div class="justify-center align-text-center">
               <h2 class="mb-2 justify-center row text-primary font-xl lora-header">Services</h2>
             </div>
             <div class="row gap-2">
-              <div class="col-12-xs col-4-md">
+              <div class="col-12-xs col-5-md col-3-lg">
                 <div class="card">
-                  <h3 class="row justify-center card-title m-1 lora-header">Garden Design
+                  <h3 class="row justify-center card-title m-1 lora-header">Design
                     <!-- <span class="badge-orange text-white ml-1">new</span>   -->
                   </h3>
-                  <a href="img/front-yard-design.png">
-                    <img src="img/front-yard-design.png" alt="design sketch">
-                  </a>
+                    <div class="image-container">
+                      <div class="image"><img src="img/front-yard-design.png" alt="design sketch"></div>
+                    </div>  
                   <p class="m-1 lora">Provide hand drawn sketches for new garden layouts with plants selected to suit your individual tastes and garden site. Photos and plants descriptions provided.</p>
                 </div>
               </div>
-              <div class="col-12-xs col-4-md">
+              <div class="col-12-xs col-5-md col-3-lg">
                 <div class="card">
                   <h3 class="row justify-center card-title m-1 lora-header">Installation</h3>
-                  <a href="img/Installation.JPG">
-                  <img src="img/Installation.JPG" alt="front of a house installation">
-                  </a>
+                  <div class="image-container">
+                    <div class="image"><img src="img/Installation.JPG" alt="front of a house installation"></div>
+                  </div>
                   <p class="m-1 lora">Installation of hand selected prennials, shrubs, and small trees to fill your garden spaces. Additional soil, amendments and mulching can be provided as indicated.</p>
                 </div>
               </div>
-              <div class="col-12-xs col-4-md">
+              <div class="col-12-xs col-5-md col-3-lg">
                 <div class="card">
                   <h3 class="row justify-center card-title m-1 lora-header">Maintenance</h3>
-                  <a href="img/maintenance1.png">
-                   <img src="/img/maintenance1.png" alt="flowers on a tree bed">
-                  </a>
+                  <div class="image-container">
+                    <div class="image"><img src="/img/maintenance1.png" alt="flowers on a tree bed"></div>
+                  </div>
                   <p class="m-1 lora">Regular visits at scheduled intervals throughout the growing sesason to provide weeding, dead heading, pruning, and fertilization to keep your garden beds looking at their best.</p>
                 </div>
               </div>
               <div class="row justify-center container">
-              <div class="col-12-xs col-4-md hidden">
+              <div class="col-12-xs col-5-md col-3-lg hidden">
                 <div class="card">
                   <h3 class="row justify-center card-title m-1 lora-header">Spring and Fall Clean Ups</h3>
-                  <a href="img/maintanence.JPG">
-                    <img src="img/maintanence.JPG" alt="flowers on a tree bed">
-                  </a>
+                  <div class="image-container">
+                    <div class="image"><img src="img/winter-spring-services.jpg" alt="flowers on a tree bed"></div>
+                  </div>
                   <p class="m-1 lora">In the spring, clean up of garden debris with mulch application if desired.<br> In the fall, prepare beds for winter by cutting back, fertilizing, diving plants as indicated.</p>
                 </div>
               </div>
@@ -133,22 +121,13 @@
             <div class="row justify-center mt-2">
               <button class="btn-secondary text-white font-md display">View All</button>
             </div>
-            <!-- stop here -->
-            <!-- <div class="col-12-xs col-4-md hidden">
-              <div class="card">
-                <h3 class="row justify-center card-title m-1 lora-header">Spring and Fall Clean Ups</h3>
-                <a href="img/maintanence.JPG">
-                  <img src="img/maintanence.JPG" alt="flowers on a tree bed">
-                </a>
-                <p class="m-1 lora">In the spring, clean up of garden debris with mulch application if desired.<br> In the fall, prepare beds for winter by cutting back, fertilizing, diving plants as indicated.</p>
-              </div>
-            </div> -->
+
             <div class="row justify-center mt-2">
               <button class="btn-secondaryb text-white font-md">Show Less</button>
             </div>
-          </div>
-          </div>
-        </section>
+            
+        </div>
+       </section>
 
       <!-- Our Story Section -->
       <section id="ourstory" class="pt-4 oursection">
@@ -227,13 +206,13 @@
                   
                 </div>
               </div> -->
-              <div class="col-12-xs col-4-md hidden2">
-                <div class="card p-0">
-                  <h3 class="card-title justify-center lora">Work 4</h3>
-                  <img src="img/work4.JPG" alt="yard with a new garden">
-                  
-                </div>
-              </div>
+                                  <div class="col-12-xs col-4-md hidden2">
+                                    <div class="card p-0">
+                                      <h3 class="card-title justify-center lora">Work 4</h3>
+                                      <img src="img/work4.JPG" alt="yard with a new garden">
+                                      
+                                    </div>
+                                  </div>
             </div>
            <div class="row justify-center mt-2">
               <button class="display2 btn-secondary text-white font-md">View All</button>
