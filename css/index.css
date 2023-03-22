@@ -69,7 +69,7 @@ li {
   transition: all 0.3s ease-in-out;
 }
 
-@media(max-width:768px) {
+@media(max-width:850px) {
   .hamburguer {
     display: block;
   }
@@ -170,6 +170,42 @@ li {
   background-color: rgba(222, 232, 130, 0.827);
 }
 
+
+
+/*  */
+
+/* services */
+
+.card .image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.imagen-container .imagen {
+
+  overflow: hidden;
+
+  cursor: pointer;
+
+}
+
+.card .imagen-continer .imagen img {
+  border: 5px solid blue;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 2s linear;
+ 
+}
+
+.card .imagen-container .imagen:hover img {
+  transform: scale(1.1);
+}
+
+/* Gallery  and images on media query*/
+/* stop ////////////////////////////////////////////////////////////////////////////// */
+
 .worksection {
   background-image: url(../img/sketch-1.JPG);
   background-size: cover;
@@ -179,84 +215,140 @@ li {
 
 }
 
-#service {
-  background-color: red;
-}
-/*  */
-
-/* Images */
-/* .container-gallery{
-  width: 50%;
-  height: 100vh;
+.flex{
   display: flex;
-  align-items: center;
   justify-content: center;
-  border: 1px solid #f6c32c;
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5%;
-} */
-.card .image-container {
+  align-items: center;
+}
+.galleria {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-
-.card .image-container .image {
-  height: 100%;
-  width: 100%;
-  border: 5px solid white;
-  border-radius: 20%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+.gallery-image {
+  width: 25%;
+  height: calc(50% - 20px);
+  min-width: 300px;
+  max-height: 225px;
+  margin: 10px;
   overflow: hidden;
   cursor: pointer;
-}
+  border: 2px solid #f6c32c;
 
-.card .image-continer .image img {
-  height: 100%;
+}
+.gallery-image .image{
   width: 100%;
+  height: 100%;
   object-fit: cover;
-  transition: 2s linear;
+  transition: 1s;
 }
 
-.card .image-container .image:hover img {
-  transform: scale(1.1);
-}
-
-
-/* .container .popup-image{
+.popup {
   position: fixed;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.9);
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-}
-.container-for-pop .popup-image .span{
-  position:absolute;
-  top:0;
-  right: 10px;
-  font-size: 60px;
-  font-weight: bolder;
-  color:#fff;
-  cursor: pointer;
-  z-index: 100;
-}
-.container-for-pop .popup-image img{
-  position: absolute;
   top: 50%;
   left: 50%;
-  transform: (-50%, -50%);
-  width: 750px;
-  object-fit:cover;
-} */
+  transform: translate(-50%, -50%) scale(0);
+  width: 80%;
+  max-width: 1200px;
+  height: 90vh;
+  max-height: 800px;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  overflow: hidden;
+  transition: 1s;
+  opacity: 0;
+}
 
-/* stop  */
-/* Gallery  and images on media query*/
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
 
+.popup.active .close-btn, 
+.popup.active .large-image,
+.popup.active .arrow-btn,
+.popup.active .image-name {
+  opacity: 1;
+  transition: opacity 0.5s;
+  transition-delay: 1s;
+}
 
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 50px;
+  background: #000;
+  color:#fff;
+  text-align: center;
+  line-height: 50px;
+  font-weight: 300;
+}
+.image-name{
+  opacity: 0;
+}
+.close-btn{
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(222, 232, 130, 0.827);
+  cursor: pointer; 
+ }
+ .close-btn:hover {
+  color: rgb(168, 237, 168);
+  background: #0f0e01;
+}
+ .pepito {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  transform: scale(1.3);
+  background: none;
+  color: #0f0e01;
+}
+.pepito:hover{
+  color: rgb(168, 237, 168);
+  background: #0f0e01;
+}
 
-
+.arrow-btn {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  color: #0f0e01;
+  background:rgba(222, 232, 130, 0.827);
+}
+.index {
+  opacity: 0;
+}
+.left-arrow{
+  left: 10px;
+}
+.right-arrow{
+  right: 10px;
+}
+.arrow-btn:hover {
+  color: rgb(168, 237, 168);
+  background: #0f0e01;
+}
+.large-image{
+  margin-top: 5%;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  opacity: 0;
+}
 
 /* paragraphs */
 
@@ -715,6 +807,10 @@ img {
 }
 
 /*  */
+.pl-1{
+  padding-left: 1em;
+}
+
 .pl-4 {
   padding-left: 4em;
 }
