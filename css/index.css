@@ -200,7 +200,6 @@ li {
   width: 100%;
   object-fit: cover;
   transition: 2s linear;
- 
 }
 
 .card .imagen-container .imagen:hover img {
@@ -240,6 +239,7 @@ li {
   overflow: hidden;
   cursor: pointer;
   border: 2px solid #f6c32c;
+  overflow: hidden;
 
 }
 .gallery-image .image{
@@ -247,6 +247,9 @@ li {
   height: 100%;
   object-fit: cover;
   transition: 1s;
+}
+.gallery-image .image:hover{
+  transform: scale(1.1);
 }
 
 .popup {
@@ -369,6 +372,12 @@ p {
 .footer-style:hover {
   color: #f6c32c;
 }
+
+.becky{
+  width: 40%;
+  border: 2px solid orange;
+  border-radius: 5%;
+}
 /*  */
 
 
@@ -473,11 +482,7 @@ img {
     position: relative;
     transition: width 0.75s;
   }
-  .img-box:hover{
-    width: 95%;
-    cursor: pointer;
-
-  }
+  
 
   .img-box2 {
     width: 100%;
@@ -491,10 +496,7 @@ img {
     transition: width 0.75s;
   }
 
-  .img-box2:hover{
-    width: 95%;
-    cursor: pointer;
-  }
+  
 
 
   .img-box3{
@@ -509,11 +511,7 @@ img {
     transition: width 0.75s;
   }
 
-  .img-box3:hover{
-    width: 95%;
-    cursor: pointer;
   
-  }
 
   .img-box4{
     width: 100%;
@@ -527,11 +525,7 @@ img {
     transition: width 0.75s;
   }
 
-  .img-box4:hover{
-    width: 95%;
-    cursor: pointer;
-  
-  }
+ 
   .img-box5{
     width: 100%;
     height: 400px;
@@ -544,11 +538,7 @@ img {
     transition: width 0.75s;
   }
 
-  .img-box5:hover{
-    width: 95%;
-    cursor: pointer;
   
-  }
   .img-box6{
     width: 100%;
     height: 400px;
@@ -561,11 +551,7 @@ img {
     transition: width 0.75s;
   }
 
-  .img-box6:hover{
-    width: 95%;
-    cursor: pointer;
   
-  }
   .img-box7{
     width: 100%;
     height: 400px;
@@ -578,11 +564,6 @@ img {
     transition: width 0.75s;
   }
 
-  .img-box7:hover{
-    width: 95%;
-    cursor: pointer;
-  
-  }
 
 }
 @media screen and (min-width: 720px) {
