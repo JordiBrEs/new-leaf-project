@@ -78,17 +78,15 @@ images.forEach((item, i) => {
 const updateImage = (i) => {
     let path = `img/job${i+1}.png`;
     largeImage.src = path;
-    imageName.innerHTML = `Our job #${i+1}`;
+    imageName.innerHTML = `Some of our work #${i+1}`;
     index = i;
 
 }
-
 
 closeButton.addEventListener("click", () => {
     popup.classList.toggle('active');
 
 })
-
 
 arrowLeft.addEventListener("click", () => {
     if(index > 0){
