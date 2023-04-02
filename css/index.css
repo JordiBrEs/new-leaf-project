@@ -85,12 +85,13 @@ li {
   }
   .nav-menu{
     position: fixed;
-    left: -100%;
+    right: -100%;
     top: 100px;
     gap: 0;
     flex-direction: column;
-    background-color: #a3f2d6;
-    width: 100%;
+    background-color: rgba(163, 242, 214, .85);
+
+    width: 70%;
     text-align: center;
     transition: 0.35s;
   }
@@ -98,7 +99,7 @@ li {
     margin: 16px 0;
   }
   .nav-menu.active{
-    left: 0;
+    right: 0;
   }
   .logo{
     width: 70%;
@@ -722,7 +723,7 @@ img {
   padding: 1em;
   border: 2px inset #f6c32c;
   border-top-left-radius: 10%;
-  border-bottom-right-radius: 10%;
+  border-bottom-right-radius: 20%;
   box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.4);
  
 }
