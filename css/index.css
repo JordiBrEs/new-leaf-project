@@ -735,9 +735,12 @@ img {
   flex-direction: row;
   /* min-height: 50vh; */
   padding: 1em;
-  border: 1px solid #f6c32c;
+  border: 2px solid #f6c32c;
   box-shadow: 3px 10px 15px rgba(0, 0, 0, 0.4);
   border-radius: 5%;
+  background-color: #ffffff10;
+  backdrop-filter: blur(10px);
+  
 }
 
 .card-gallery {
